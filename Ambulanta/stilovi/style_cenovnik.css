@@ -1,0 +1,69 @@
+.meni{
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+	width: 100%;
+}
+
+nav ul{
+	list-style-type:none;
+	background-color: #303841;
+    color: white;
+	overflow: hidden;
+}
+
+nav ul::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+nav li{
+	width:25%;
+	float:left;
+}
+
+nav ul li{
+	float:left;
+	padding:5px;
+	border-right: 2px solid white;
+}
+nav ul li:last-child{
+	border:none;
+}
+
+nav ul li:hover{
+	background-color:#ea8a8a;
+	font-weight: bold;
+}
+
+#cenovnik{
+	margin:25px;
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+#cenovnik td{
+	padding:5px;
+}
+
+#cenovnik tr:nth-child(even){
+	background-color:lightgray;
+}
+
+#cenovnik tr:hover{
+	background-color:#ea8a8a;
+	font-weight: bold;
+}
+h1{
+	margin-top:50px;
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+	text-align:center;
+	font-family:"Palatino Linotype";
+}
+a{
+	text-decoration:none;
+	color:white;
+}

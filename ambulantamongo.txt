@@ -1,0 +1,303 @@
+use ambulanta;
+
+db.user.insertMany([
+{
+    username:"kristinakiric",
+    password:"kristinakiric",
+    type:"radnik"
+},
+{
+    username:"markoi",
+    password:"markoi",
+    type:"radnik"
+},
+{
+    username:"viktorjovic",
+    password:"viktorjovic",
+    type:"radnik"
+},
+{
+    username:"aleksapejic",
+    password:"aleksapejic",
+    type:"radnik"
+},
+{
+    username:"milicas",
+    password:"milicas",
+    type:"radnik"
+}
+]);
+
+db.worker.insertMany([
+{
+    name:"kristina",
+    last_name:"kiric",
+    phone:"065114792",
+    email:"kristinak@gmail.com",
+    work_years:"7",
+    job_type:"hirurg",
+    user_id:ObjectId("64468c5f30c2fdc61ba26ed7")
+},
+{
+    name:"marko",
+    last_name:"ilic",
+    phone:"061774792",
+    email:"markoi@gmail.com",
+    work_years:"3",
+    job_type:"doktor",
+    user_id:ObjectId("64468c5f30c2fdc61ba26ed8")
+},
+{
+    name:"viktor",
+    last_name:"jovic",
+    phone:"064938539",
+    email:"viktorj@gmail.com",
+    work_years:"2",
+    job_type:"asistent",
+    user_id:ObjectId("64468c5f30c2fdc61ba26ed9")
+},
+{
+    name:"aleksa",
+    last_name:"pejic",
+    phone:"065948692",
+    email:"aleksap@gmail.com",
+    work_years:"2",
+    job_type:"anesteziolog",
+    user_id:ObjectId("64468c5f30c2fdc61ba26eda")
+},
+{
+    name:"milica",
+    last_name:"savic",
+    phone:"064645692",
+    email:"milicas@gmail.com",
+    work_years:"4",
+    job_type:"glavni doktor",
+    user_id:ObjectId("64468c5f30c2fdc61ba26edb")
+}
+]);
+
+db.client.insertMany([
+    {
+    name:"jela",
+    last_name:"jovic",
+    email:"jelaj@gmail.com",
+    phone:"069835783",
+    adress:"Vizantijski Bulevar 12"
+    },
+    {
+    name:"ivana",
+    last_name:"krstic",
+    email:"ivanakrs@gmail.com",
+    phone:"069893731",
+    adress:"Knez Mihajlova 4"
+    },
+    {
+    name:"maja",
+    last_name:"obradovic",
+    email:"majao@gmail.com",
+    phone:"0672435783",
+    adress:"Episkopska 35"
+    },
+    {
+    name:"stefan",
+    last_name:"spasovic",
+    email:"stefans@gmail.com",
+    phone:"0698095983",
+    adress:"Mokranjceva 1"
+    }
+]);
+
+db.service.insertMany([
+    {
+        name:"Opšti klinički pregled",
+        price:"1200",
+        serv_duration:"1",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edd")
+    },
+     {
+        name:"Izlazak na teren",
+        price:"3000",
+        serv_duration:"2",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edd")
+    },
+     {
+        name:"Uverenje o zdravstvenom stanju",
+        price:"1300",
+        serv_duration:"1",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26ede")
+    },
+     {
+        name:"Vakcinacija",
+        price:"2000",
+        serv_duration:"1",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edd")
+    },
+     {
+        name:"Sondiranje",
+        price:"800",
+        serv_duration:"1",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edc")
+    },
+     {
+        name:"Klistiranje",
+        price:"1000",
+        serv_duration:"2",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edc")
+    },
+     {
+        name:"Aplikacija leka",
+        price:"1200",
+        serv_duration:"1",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26ede")
+    },
+     {
+        name:"Previjanje",
+        price:"1000",
+        serv_duration:"1",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edc")
+    },
+     {
+        name:"Infuzija i/v",
+        price:"1700",
+        serv_duration:"3",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26ede")
+    },
+     {
+        name:"Pregled uha",
+        price:"1200",
+        serv_duration:"1",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edd")
+    },
+     {
+        name:"Lečenje gljivica uha",
+        price:"700",
+        serv_duration:"1",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26ede")
+    },
+     {
+        name:"Obeležavanje i izdavanje pasoša",
+        price:"1300",
+        serv_duration:"2",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26ede")
+    },
+     {
+        name:"Kateterizacija",
+        price:"1500",
+        serv_duration:"3",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edc")
+    },
+     {
+        name:"Analiza brisa kože",
+        price:"2000",
+        serv_duration:"2",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26ede")
+    },
+     {
+        name:"Vađenje krpelja",
+        price:"1000",
+        serv_duration:"2",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26ede")
+    },
+     {
+        name:"Skraćivanje kljunova",
+        price:"1000",
+        serv_duration:"1",
+        worker_id:ObjectId("64468d3e30c2fdc61ba26ede")
+    }
+]);
+
+db.animal.insertMany([
+    {
+        type:"Pas"
+    },
+    {
+        type:"Mačka"
+    },
+    {
+        type:"Papagaj"
+    },
+    {
+        type:"Hrčak"
+    }
+]);
+
+db.term.insertMany([
+    {
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edc"),
+        service_id:ObjectId("6446902f30c2fdc61ba26ee9"),
+        client_id:ObjectId("64468e7330c2fdc61ba26ee2"),
+        animal_id:ObjectId("644690b230c2fdc61ba26ef6"),
+        date_time:ISODate("2023-10-24T11:26:02Z")
+    },
+    {
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edd"),
+        service_id:ObjectId("6446902f30c2fdc61ba26ee5"),
+        client_id:ObjectId("64468e7330c2fdc61ba26ee3"),
+        animal_id:ObjectId("644690b230c2fdc61ba26ef5"),
+        date_time:ISODate("2023-10-27T16:13:02Z")
+    },
+    {
+        worker_id:ObjectId("64468d3e30c2fdc61ba26ede"),
+        service_id:ObjectId("6446902f30c2fdc61ba26eeb"),
+        client_id:ObjectId("64468e7330c2fdc61ba26ee1"),
+        animal_id:ObjectId("644690b230c2fdc61ba26ef8"),
+        date_time:ISODate("2023-11-22T11:15:37Z")
+    },
+    {
+        worker_id:ObjectId("64468d3e30c2fdc61ba26ede"),
+        service_id:ObjectId("6446902f30c2fdc61ba26ee7"),
+        client_id:ObjectId("64468e7330c2fdc61ba26ee4"),
+        animal_id:ObjectId("644690b230c2fdc61ba26ef7"),
+        date_time:ISODate("2023-10-15T13:17:45Z")
+    },
+    {
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edd"),
+        service_id:ObjectId("6446902f30c2fdc61ba26eee"),
+        client_id:ObjectId("64468e7330c2fdc61ba26ee1"),
+        animal_id:ObjectId("644690b230c2fdc61ba26ef5"),
+        date_time:ISODate("2023-12-11T10:19:31Z")
+    }
+]);
+
+db.pay.insertMany([
+    {
+        date_time:ISODate("2023-10-24T12:26:02Z"),
+        price:"800",
+        term_id:ObjectId("644692e030c2fdc61ba26ef9"),
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edf"),
+        service_id:ObjectId("6446902f30c2fdc61ba26ee9"),
+        client_id:ObjectId("64468e7330c2fdc61ba26ee2")
+    },
+     {
+        date_time:ISODate("2023-10-27T17:13:02Z"),
+        price:"1200",
+        term_id:ObjectId("644692e030c2fdc61ba26efa"),
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edf"),
+        service_id:ObjectId("6446902f30c2fdc61ba26ee5"),
+        client_id:ObjectId("64468e7330c2fdc61ba26ee3")
+    },
+     {
+        date_time:ISODate("2023-11-22T12:15:37Z"),
+        price:"1200",
+        term_id:ObjectId("644692e030c2fdc61ba26efb"),
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edf"),
+        service_id:ObjectId("6446902f30c2fdc61ba26eeb"),
+        client_id:ObjectId("64468e7330c2fdc61ba26ee1")
+    },
+     {
+        date_time:ISODate("2023-10-15T14:17:45Z"),
+        price:"1300",
+        term_id:ObjectId("644692e030c2fdc61ba26efc"),
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edf"),
+        service_id:ObjectId("6446902f30c2fdc61ba26ee7"),
+        client_id:ObjectId("64468e7330c2fdc61ba26ee4")
+    },
+     {
+        date_time:ISODate("2023-12-11T11:19:31Z"),
+        price:"1200",
+        term_id:ObjectId("644692e030c2fdc61ba26efd"),
+        worker_id:ObjectId("64468d3e30c2fdc61ba26edf"),
+        service_id: ObjectId("6446902f30c2fdc61ba26eee"),
+        client_id:ObjectId("64468e7330c2fdc61ba26ee1")
+    },
+]);

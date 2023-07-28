@@ -1,0 +1,85 @@
+.meni{
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+	width: 100%;
+}
+
+nav ul{
+	list-style-type:none;
+	background-color: #303841;
+    color: white;
+	overflow: hidden;
+}
+
+nav ul::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+nav li{
+	width:25%;
+	float:left;
+}
+
+nav ul li{
+	float:left;
+	padding:5px;
+	border-right: 2px solid white;
+}
+nav ul li:last-child{
+	border:none;
+}
+
+nav ul li:hover{
+	background-color:#ea8a8a;
+	font-weight: bold;
+}
+
+#prvi{
+	margin-top:45px;
+}
+
+#prvi img{
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+}
+h2, h1, h3{
+	font-family:"Palatino Linotype";
+	padding-bottom:10px;
+}
+
+#prvitekst, #forma{
+	padding:20px;
+}
+
+#drugitekst{
+	padding-bottom:20px;
+	padding-left:20px;
+	padding-right:20px;
+}
+ul{
+	list-style-type:none;
+}
+li{
+	padding-bottom:5px;
+}
+
+.tekst{
+	padding:5px 5px 5px 0px;
+}
+form{
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+}
+input{
+	width:70%;
+	height:30px;
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}

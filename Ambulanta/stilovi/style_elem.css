@@ -1,0 +1,129 @@
+body{
+	background-color:#f4f6ff;
+}
+
+footer{
+	background-color:#303841;
+	color:white;
+	text-align:center;
+	margin:0px;
+}
+
+footer table{
+	color:#f6f6f6;
+	text-align:center;
+	width:100%;
+}
+
+.meni{
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+	width: 100%;
+	height:55px;
+}
+
+nav ul{
+	list-style-type:none;
+	background-color: #303841;
+    color: white;
+	overflow: hidden;
+}
+
+nav ul::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+nav li{
+	width:25%;
+	float:left;
+}
+
+nav ul li{
+	float:left;
+	padding:5px;
+	border-right: 2px solid white;
+}
+nav ul li:last-child{
+	border:none;
+}
+
+nav ul li:hover{
+	background-color:#ea8a8a;
+	font-weight: bold;
+}
+
+header{
+	margin:8px;
+	padding-top:35px;
+	/*background-image: url('slike/naslovna2.jpg');
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;*/
+
+}
+header h1, .centar{
+	font-family:"Palatino Linotype";
+	text-align:left;
+	text-shadow:3px 3px 3px gray;
+}
+.ostatak{
+	margin:8px;
+	padding:8px;
+}
+
+aside ul{
+	   list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+aside ul li{
+	background-color: #55534d;
+    color: white;
+    padding: 12px;
+    margin: 10px;
+}
+
+aside ul li:hover{
+    background-color: #ea8a8a;
+    box-shadow: 5px 5px 5px gray;
+}
+
+header img{
+	width:100%;
+}
+
+#parag1{
+	text-indent:20px;
+}
+
+h2, h1, h3{
+	font-family:"Palatino Linotype";
+}
+
+.centar{
+	text-align:center;
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
+.pdva{
+	padding-right:10px;
+}
+
+#prvi{
+	width: 50%;
+    
+    margin:auto;
+    padding: 10px;
+}
+
+#slika{
+	/*padding-right:-5px;*/
+	padding-left: 10px;
+	margin-left: 6px;
+}
